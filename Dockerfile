@@ -29,7 +29,7 @@ RUN apt-get update && \
   mkdir -p \
   	/app \
   	/config \
-  	/defaults 
+  	/defaults \
   && \
   
   # Cleanup
