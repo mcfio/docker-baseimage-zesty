@@ -13,7 +13,7 @@ if [ ! -z "${PUID}" ]; then
      usermod -o -u "${PUID}" mcf
         
      # Cleanup the temp home dir
-     if [ ! "${PLEX_UID}" -eq 0 ]; then
+     if [ ! "${PUID}" -eq 0 ]; then
        usermod -d /config mcf
        rm -Rf /tmp/temphome
      fi
